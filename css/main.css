@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'santiagoregular';
+    src: url('../assets/santiago/Santiago.eot'); /* IE9 Compat Modes */
+    src: url('../assets/santiago/santiago-webfont.woff2') format('woff2'),
+        url('../assets/santiago/santiago-webfont.woff') format('woff'),
+        url('../assets/santiago/Santiago.ttf')  format('truetype'), /* Safari, Android, iOS */
+       	url('../assets/santiago/Santiago.svg') format('svg'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font-family: 'santiagoregular';
+}

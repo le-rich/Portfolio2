@@ -13,14 +13,14 @@
 
 #title{
 	font-size: 36px;
-	font-family: 'Butler';
-	font-weight: 500;
+	font-family: 'EB Garamond';
+	font-weight: 600;
 	letter-spacing: 0.005em;
 	z-index: 10000000;
 }
 
 #navBar{
-	background-color: white;
+	background-color: #F2F4F2;
 	margin-left: 3vw;
 	margin-right: 3vw;
 	padding: 0.25%;
@@ -28,22 +28,15 @@
 
 #constantTitle{
 	position: absolute;
-	background-color: white;
 	margin-left: 3vw;
 	margin-right: 3vw;
 	padding: 0.25%;
 }
 
-#iconBar{
-	background-color: white;
-}
-
 #splashRichard{
 	color: white;
-	font-size: 120px;
-	font-family: 'santiagoregular';
-	font-weight: 200;
-	letter-spacing: 0.01em;
+	font-family: 'Butler';
+	font-weight: 900;
 }
 
 .navTitlesHolder{
@@ -62,10 +55,11 @@
 }
 
 
-.navTitle h6 {
+.navTitle a h6 {
 	font-weight: 800;
 	display: table-cell;
 	vertical-align: middle;
+	color: black;
 }
 
 

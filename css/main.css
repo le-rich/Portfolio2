@@ -19,7 +19,7 @@
 	z-index: 10000000;
 }
 
-#navBar{
+.navBar{
 	background-color: #F2F4F2;
 	margin-left: 3vw;
 	margin-right: 3vw;
@@ -65,7 +65,7 @@
 
 body{
 	font-family: 'Butler';
-	background-color: black;
+	background-color: grey;
 }
 
 * {

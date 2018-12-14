@@ -17,14 +17,42 @@
 	font-weight: 600;
 	letter-spacing: 0.005em;
 	z-index: 10000000;
+	color: black;
+
+}
+
+#title a{
+	color: black;
+	text-decoration: none;
+	transition: font-size .2s;
+}
+
+#title a:hover{
+	color: black;
+	font-size: 38px;
 }
 
 .navBar{
-	background-color: #F2F4F2;
+	/*background-color: #F2F4F2;*/
 	margin-left: 3vw;
 	margin-right: 3vw;
 	padding: 0.25%;
 }
+
+.navBar div a img{
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: transform .2s;
+}
+
+.navBar div a{
+	text-decoration:  none;
+}
+
+.navBar div a img:hover{
+	transform: scale(1.2);
+}
+
 
 #constantTitle{
 	position: absolute;
@@ -37,6 +65,11 @@
 	color: white;
 	font-family: 'Butler';
 	font-weight: 900;
+}
+
+#iconsBar{
+	text-align: center;
+	padding-top: 0;
 }
 
 .navTitlesHolder{
@@ -62,9 +95,16 @@
 	color: black;
 }
 
+.skills{
+	width: 95%;
+	margin: 0 auto;
+	text-align: right;
+	list-style-type: none;
+}
+
 
 body{
-	font-family: 'Butler';
+	font-family: 'EB Garamond';
 	background-color: grey;
 }
 

@@ -13,7 +13,7 @@
 
 #title{
 	font-size: 36px;
-	font-family: 'EB Garamond';
+	font-family: 'space_groteskmedium';
 	font-weight: 600;
 	letter-spacing: 0.005em;
 	z-index: 10000000;
@@ -27,13 +27,13 @@
 	transition: font-size .2s;
 }
 
-#title a:hover{
+/*#title a:hover{
 	color: black;
 	font-size: 38px;
-}
+}*/
 
 .navBar{
-	/*background-color: #F2F4F2;*/
+	background-color: #F2F4F2;
 	margin-left: 3vw;
 	margin-right: 3vw;
 	padding: 0.25%;
@@ -83,8 +83,8 @@
 	align-items: center;
 	justify-content: center;
 	display: flex;
-	font-weight: 800;
-	font-family: 'Montserrat', sans-serif;
+	/*font-weight: 800;*/
+	font-family: 'space_groteskmedium', sans-serif;
 }
 
 
@@ -95,17 +95,32 @@
 	color: black;
 }
 
-.skills{
+.cover-menu{
 	width: 95%;
-	margin: 0 auto;
-	text-align: right;
+	height: 100%;
+	text-align: left;
 	list-style-type: none;
+	font-size: 140px;
+	color:  white;
+	line-height: 85%;
 }
 
+.cover-number{
+	font-size: 12px;
+	display: inline;
+}
 
-body{
-	font-family: 'EB Garamond';
-	background-color: grey;
+.cover-menu li div::before{
+	font-size: 12px;
+	font-family: 'space_grotesklight';
+	content: attr(data-index);
+}
+
+html, body{
+	font-family: 'space_groteskbold';
+	background-color: black;
+	margin: 0;
+	height: 100%;
 }
 
 * {

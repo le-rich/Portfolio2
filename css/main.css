@@ -95,25 +95,58 @@
 	color: black;
 }
 
+.cover{
+	padding-top: 25vh;
+	color: white;
+}
+
+.cover-intro{
+	color: white;
+	position: absolute;
+	bottom: calc(7.5vh + 67px);
+	left: 132px;
+}
+
+.cover-intro h6{
+	font-family: 'space_grotesklight';
+}
+
 .cover-menu{
 	width: 95%;
 	height: 100%;
 	text-align: left;
 	list-style-type: none;
-	font-size: 140px;
+	font-size: 15vh;
 	color:  white;
 	line-height: 85%;
 }
 
-.cover-number{
-	font-size: 12px;
-	display: inline;
+.cover-menu-element a{
+	color: transparent;
+	transition: color .2s;
+	transition: transform 1s;
+	-webkit-text-stroke-width: 2px;
+  	-webkit-text-stroke-color: white;
+  	text-decoration: none;
 }
+
+.cover-menu-element a:hover{
+	color: white;
+	transition: color .2s;
+  	text-decoration: none;
+  	transform: rotate(360deg);
+}
+
 
 .cover-menu li div::before{
 	font-size: 12px;
 	font-family: 'space_grotesklight';
 	content: attr(data-index);
+}
+
+a {
+	text-decoration: none;
+	color: white;
 }
 
 html, body{

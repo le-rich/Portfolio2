@@ -95,8 +95,12 @@
 	color: black;
 }
 
+.projects{
+	opacity: 0;
+}
+
 .cover{
-	padding-top: 25vh;
+	/*padding-top: 30vh;*/
 	color: white;
 }
 
@@ -111,30 +115,57 @@
 	font-family: 'space_grotesklight';
 }
 
+.cover-header{
+	padding-top: 5em;
+	padding-bottom: 5em;
+	color: white;
+	margin-left: 9%;
+	font-family: 'space_grotesklight';
+}
+
+.cover-header p{
+	line-height: 1.6;
+	margin: 0;
+}
+
 .cover-menu{
 	width: 95%;
 	height: 100%;
 	text-align: left;
 	list-style-type: none;
-	font-size: 15vh;
+	font-size: 9vw;
 	color:  white;
 	line-height: 85%;
+
 }
 
-.cover-menu-element a{
+.cover-menu-element{
+	margin-left: 6.25%;
+	transition: transform 0.5s cubic-bezier(.075,.82,.165,1);
+	z-index: 100;
+	transform-style: preserve-3d;
+	transform-origin: left center;
+}
+
+.cover-menu-element:hover{
+	transform: translateX(1vw);
+}
+
+.cover-menu-element button{
 	color: transparent;
 	transition: color .2s;
 	transition: transform 1s;
-	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-width: 0.1vw;
   	-webkit-text-stroke-color: white;
   	text-decoration: none;
+  	border: none;
+	background: none;
 }
 
-.cover-menu-element a:hover{
+.cover-menu-element button:hover{
 	color: white;
 	transition: color .2s;
   	text-decoration: none;
-  	transform: rotate(360deg);
 }
 
 
@@ -151,7 +182,7 @@ a {
 
 html, body{
 	font-family: 'space_groteskbold';
-	background-color: black;
+	background-color: #1e1e1e;
 	margin: 0;
 	height: 100%;
 }
@@ -160,3 +191,4 @@ html, body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+

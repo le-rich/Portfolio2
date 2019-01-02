@@ -1,27 +1,77 @@
-//COVER PAGE
+/////////////////////////////////////////////////////////////////////////////////////////// COVER PAGE
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
 
 $('#cover-projects-btn').click(function(){
 	$(".cover").toggleClass("fadeOutDown").on('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
               window.location.href = "projects.html"
      });
-})
+});
 
 $('#cover-resume-btn').click(function(){
 	$(".cover").toggleClass("fadeOutLeft").on('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
               window.location.href = "projects.html"
      });
-})
+});
 
 $('#cover-contact-btn').click(function(){
 	$(".cover").toggleClass("fadeOutUp").on('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
               window.location.href = "projects.html"
      });
-})
+});
 
 $('#cover-contact-btn').click(function(){
 	toggleCover();
-})
+});
 
+
+/////////////////////////////////////////////////////////////////////////////////////////// PROJECTS PAGE
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+
+var activeProjectDiv = '#gamedev-projects';
+$('#software-projects').hide();
+$('#other-projects').hide();
+
+$("#gamedev-projects").toggleClass("fadeInDown").on('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
+	$('#gamedev-projects').removeClass('fadeInDown');
+	$('#projects-catButtons').addClass('fadeIn');
+});
+
+
+$('#gamedev-button').click(function(){
+	if (activeProjectDiv != '#gamedev-projects'){
+		switchToProject($('#gamedev-projects'), $(activeProjectDiv));
+		activeProjectDiv = '#gamedev-projects';
+	}
+});
+
+$('#software-button').click(function(){
+	if (activeProjectDiv != '#software-projects'){
+		switchToProject($('#software-projects'), $(activeProjectDiv));
+		activeProjectDiv = '#software-projects';
+	}
+});
+
+$('#other-button').click(function(){
+	if (activeProjectDiv != '#other-projects'){
+		switchToProject($('#other-projects'), $(activeProjectDiv));
+		activeProjectDiv = '#other-projects';
+	}
+});
+
+
+function switchToProject(toEnable, toDisable){
+	toDisable.addClass("fadeOut").on('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
+		toDisable.hide();
+		toDisable.removeClass('fadeIn');
+		toEnable.show();
+		toEnable.addClass('fadeIn');
+		toEnable.removeClass('fadeOut');
+	});
+}
 
 
 function toggleCover(){

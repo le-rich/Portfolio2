@@ -11,7 +11,7 @@ $('#cover-projects-btn').click(function(){
 
 $('#cover-resume-btn').click(function(){
 	$(".cover").toggleClass("fadeOutLeft").on('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
-              window.location.href = "projects.html"
+              window.location.href = "resume.html"
      });
 });
 
@@ -64,13 +64,8 @@ $('#other-button').click(function(){
 
 
 function switchToProject(toEnable, toDisable){
-	toDisable.addClass("fadeOut").on('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
-		toDisable.hide();
-		toDisable.removeClass('fadeIn');
-		toEnable.show();
-		toEnable.addClass('fadeIn');
-		toEnable.removeClass('fadeOut');
-	});
+	toDisable.hide();
+	toEnable.show();
 }
 
 

@@ -141,6 +141,10 @@
 	content: attr(data-index);
 }
 
+.preview-area{
+	border: 1px solid white;
+}
+
 .hl{
 	border-bottom: 2px solid #383838;
 }
@@ -148,6 +152,15 @@
 
 .vl {
 	border-left: 2px solid white;
+}
+
+.vert-center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 50%;
+	width: 50%;
 }
 
 a {

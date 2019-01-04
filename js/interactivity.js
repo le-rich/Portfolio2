@@ -5,19 +5,19 @@
 
 $('#cover-projects-btn').click(function(){
 	$(".cover").toggleClass("fadeOutDown").on('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
-              window.location.href = "projects.html"
+              window.location.href = "projects.html";
      });
 });
 
 $('#cover-resume-btn').click(function(){
 	$(".cover").toggleClass("fadeOutLeft").on('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
-              window.location.href = "resume.html"
+              window.location.href = "https://drive.google.com/viewerng/viewer?url=https://le-rich.github.io/assets/pdf/resume.pdf";
      });
 });
 
 $('#cover-contact-btn').click(function(){
 	$(".cover").toggleClass("fadeOutUp").on('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
-              window.location.href = "projects.html"
+              window.location.href = "projects.html";
      });
 });
 

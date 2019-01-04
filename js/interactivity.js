@@ -43,29 +43,29 @@ $("#gamedev-projects").toggleClass("fadeInDown").on('animationend webkitAnimatio
 
 $('#gamedev-button').click(function(){
 	if (activeProjectDiv != '#gamedev-projects'){
-		switchToProject($('#gamedev-projects'), $(activeProjectDiv));
+		switchToProject('#gamedev-projects', activeProjectDiv);
 		activeProjectDiv = '#gamedev-projects';
 	}
 });
 
 $('#software-button').click(function(){
 	if (activeProjectDiv != '#software-projects'){
-		switchToProject($('#software-projects'), $(activeProjectDiv));
+		switchToProject('#software-projects', activeProjectDiv);
 		activeProjectDiv = '#software-projects';
 	}
 });
 
 $('#other-button').click(function(){
 	if (activeProjectDiv != '#other-projects'){
-		switchToProject($('#other-projects'), $(activeProjectDiv));
+		switchToProject('#other-projects', activeProjectDiv);
 		activeProjectDiv = '#other-projects';
 	}
 });
 
 
 function switchToProject(toEnable, toDisable){
-	 $(toDisable).hide(1000, "swing");
-	 $(toEnable).show(2000, "swing");
+	 $(toDisable).hide();
+	 $(toEnable).show();
 }
 
 

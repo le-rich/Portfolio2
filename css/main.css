@@ -74,6 +74,9 @@
 	transform: rotateY(20deg) translateZ(0);
 }
 
+.contact-element:hover a{
+}
+
 .contact-element::before{
 	font-size: 12px;
 	font-family: 'space_grotesklight';
@@ -116,7 +119,7 @@
 	height: 100%;
 	text-align: left;
 	list-style-type: none;
-	font-size: 9vw;
+	font-size: 11vw;
 	color:  white;
 	line-height: 85%;
 
@@ -141,6 +144,12 @@
 
 .cover-menu-element:hover{
 	transform: translateX(1vw);
+}
+
+.cover-menu-element button:hover{
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             	0px 8px 13px rgba(0,0,0,0.1),
+             	0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .cover-menu-element button{
@@ -175,10 +184,10 @@
 }
 
 #contactContainer{
-	font-size: 1vw;
+	font-size: 2vh;
 	font-family: space_groteskmedium;
 	margin-left: 8%;
-	line-height: 1vw;
+	line-height: 2vh;
 }
 
 .preview-area{

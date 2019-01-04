@@ -64,8 +64,14 @@ $('#other-button').click(function(){
 
 
 function switchToProject(toEnable, toDisable){
-	toDisable.hide();
-	toEnable.show();
+	// toDisable.hide();
+	// toEnable.show();
+	$(toDisable).toggleClass("fadeOut").on('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
+		toDisable.hide();
+		toDisable.removeClass("fadeOut");
+        toEnable.show();
+        toEnable.addClass("fadeIn");
+    });
 }
 
 

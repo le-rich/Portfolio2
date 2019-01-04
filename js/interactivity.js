@@ -64,8 +64,8 @@ $('#other-button').click(function(){
 
 
 function switchToProject(toEnable, toDisable){
-	 toDisable.hide("1000");
-	 toEnable.show("1000");
+	 $(toDisable).hide(1000, "swing");
+	 $(toEnable).show(2000, "swing");
 }
 
 

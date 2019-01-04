@@ -160,6 +160,12 @@
   	text-decoration: none;
 }
 
+.projects-btn::before{
+	font-size: 12px;
+	font-family: 'space_grotesklight';
+	content: attr(data-index);
+}
+
 
 
 .cover-menu li div::before{

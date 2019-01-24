@@ -189,6 +189,24 @@
 	line-height: 2vh;
 }
 
+#backButton{
+	top: 50%;
+	text-align: middle;
+	padding: 10px;
+	font-size: 2vw;
+	position: fixed;
+	font-family: space_groteskmedium;
+	opacity: 0;
+	transition: all 0.5s cubic-bezier(.075,.82,.165,1);
+	z-index: 9999;
+}
+
+
+#backButton: hover{
+	opacity: 1;
+}
+
+
 .preview-area{
 	border: 1px solid white;
 }

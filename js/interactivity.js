@@ -38,6 +38,7 @@ $('#other-projects').hide();
 $("#gamedev-projects").toggleClass("fadeInDown").on('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function(e) {
 	$('#gamedev-projects').removeClass('fadeInDown');
 	$('#projects-catButtons').addClass('fadeIn');
+	$('#backButton').addClass('fadeIn');
 });
 
 

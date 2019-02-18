@@ -10,6 +10,16 @@
 
 }
 
+#arboreal-img{
+	width: 100%;
+	height: 100%;
+}
+
+#visualeyes-video{
+	max-height: 600px;
+	width: auto;
+}
+
 .projects-btn{
 	font-size: 3vw;
 	border: none;

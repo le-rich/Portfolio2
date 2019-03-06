@@ -193,10 +193,11 @@
 }
 
 #contactContainer{
-	font-size: 2vh;
+	font-size: 3.5vh;
 	font-family: space_groteskmedium;
 	margin-left: 8%;
-	line-height: 2vh;
+	line-height: 3.5vh;
+	width: 100%;
 }
 
 #backButton{

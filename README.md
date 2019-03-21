@@ -1,5 +1,4 @@
 # le-rich.github.io
-# Created December 2018
 # V2.0
 
 A portfolio website written in html with css styling to showcase current projects, previous experience, and contact details for Richard Le.

@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'santiagoregular';
     src: url('../assets/santiago/Santiago.eot'); /* IE9 Compat Modes */
@@ -271,6 +273,7 @@ html, body{
 	margin: 0;
 	height: 100%;
 	color: white;
+	overflow-x: hidden;
 }
 
 * {

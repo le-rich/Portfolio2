@@ -26,6 +26,18 @@ $('#cover-contact-btn').click(function(){
 });
 
 
+var b1 = baffle('#cover-projects-btn').start();
+var b2 = baffle('#cover-resume-btn').start();
+var b3 = baffle('#emailLink').start();
+var b4 = baffle('#linkedinLink').start();
+var b5 = baffle('#githubLink').start();
+
+b1.reveal(500);
+b2.reveal(750);
+b3.reveal(1000);
+b4.reveal(1250);
+b5.reveal(1500);
+
 /////////////////////////////////////////////////////////////////////////////////////////// PROJECTS PAGE
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
